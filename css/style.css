@@ -27,6 +27,11 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #CEC3B2;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .item-nav-header {
@@ -43,19 +48,6 @@ html, body {
 
 .inh1, .inh3 {
     border-inline: 2.5px #21211D solid;  
-}
-
-.body {
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    display: flex;
-    min-height: 100vh;
-    
-    background-color: #21211D;
 }
 
 .footer {   
@@ -79,6 +71,18 @@ html, body {
 
 /*PÁGINA INICIAL*/
 
+.bodyinicio {
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100vh;
+    
+    background-color: #21211D;
+}
+
 .items {
     display:flex;
     justify-content: center;
@@ -92,4 +96,77 @@ html, body {
     margin-inline: 20px;
 }
 
-/*PÁGINA DE DETALHES*/  
+/*PÁGINA DE DETALHES*/ 
+
+
+/*PÁGINA DE CONTATO*/
+
+.bodycontato {
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;                                  
+    color:white;
+    background-color: #21211D;
+}
+
+.contatotexto {
+    flex-wrap: wrap;
+
+    font-size: 20px;
+    color:white;
+
+    background-color: #21211D;
+}
+
+.linhaform {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.formulario {
+
+    textarea::placeholder, input::placeholder {
+        color: #848484;
+    }
+
+    input:focus, select:focus, textarea:focus, button:focus {
+        outline: none;
+    }
+    
+    input {
+        min-height: 40px;
+        min-width: 300px;
+        
+    }
+    
+    textarea {
+    min-width: 300px;
+    min-height: 105px;
+    overflow: auto;
+    resize: none;
+    }
+
+    textarea, input {
+        margin-block: 10px;
+        font-family: Arial, Helvetica, sans-serif; 
+        background-color: #D9D9D9;
+        border: 0px;
+    }
+
+    #submit {
+        font-size: 18px;
+        text-align: left;
+        min-height: 45px;
+        min-width: 170px;
+        color: white;
+        background-color: #5B48FF;
+        font-weight: bold;
+        border: 0px;
+    }
+}
